@@ -1,0 +1,145 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+main{
+    background: url("/img/zomato.avif") no-repeat center center fixed;
+    background-size: 100% 100%;
+}
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: rgba(255, 9, 9, 0.8);
+}
+
+.logo img {
+    height: 40px; /* Adjust based on your design */
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    transition: color 0.3s; /* Smooth color change on hover */
+}
+
+nav ul li a:hover {
+    color: #ffd700; /* Gold color on hover */
+}
+
+.hero {
+    text-align: center;
+    margin: 20px;
+    color: white;
+}
+
+.hero img {
+    max-width: 60%;
+    height: auto;
+}
+
+input {
+    padding: 10px;
+    margin: 20px 0;
+    width: 80%;
+    max-width: 500px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    transition: border-color 0.3s; /* Smooth border change */
+}
+
+input:focus {
+    border-color: #ff5722; /* Change border color on focus */
+    outline: none; /* Remove default outline */
+}
+
+.delivery-info {
+    background-color: rgba(255, 255, 255, 0.9);
+    margin: 20px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.delivery-info h2 {
+    margin-bottom: 10px;
+}
+
+.delivery-info ul {
+    list-style: none;
+    padding: 0;
+}
+
+.delivery-info ul li {
+    margin: 5px 0;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(255, 0, 0, 0.8);
+}
+
+footer p {
+    margin: 0;
+    color: white;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    input {
+        width: 100%;
+    }
+
+    .main-features {
+        display: grid;
+        grid-template-columns: 1fr; /* Single column on small screens */
+        gap: 20px;
+    }
+
+    .features {
+        text-align: left; /* Left-align text in features */
+    }
+}
+
+.main-features {
+    display: flex; /* Default layout */
+    gap: 20px;
+}
+
+.features {
+    flex: 1; /* Equal space for each feature */
+    padding: 15px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.features h3 {
+    margin-bottom: 10px;
+}
+
